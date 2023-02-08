@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-picocss/static/css/main.a745265f.css",
+    "main.js": "/react-picocss/static/js/main.0b4caecf.js",
+    "static/js/787.77d14086.chunk.js": "/react-picocss/static/js/787.77d14086.chunk.js",
+    "index.html": "/react-picocss/index.html",
+    "main.a745265f.css.map": "/react-picocss/static/css/main.a745265f.css.map",
+    "main.0b4caecf.js.map": "/react-picocss/static/js/main.0b4caecf.js.map",
+    "787.77d14086.chunk.js.map": "/react-picocss/static/js/787.77d14086.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a745265f.css",
+    "static/js/main.0b4caecf.js"
+  ]
+}
