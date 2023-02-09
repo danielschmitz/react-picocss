@@ -1,5 +1,6 @@
 import '@picocss/pico'
 import Forms from './Forms'
+import FormWithValidator from './FormsWithValidators'
 import PicoComponents from './PicoComponents'
 import TaskApp from './TaskApp'
 
@@ -12,7 +13,7 @@ function App() {
       {/* <TaskApp/> */}
 
 
-      <Forms />
+      <FormWithValidator/>
 
 
     </div>
