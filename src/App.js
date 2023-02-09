@@ -11,9 +11,9 @@ function App() {
 
       {/* <TaskApp/> */}
 
-      <article>
-        <Forms />
-      </article>
+
+      <Forms />
+
 
     </div>
   )
