@@ -1,24 +1,39 @@
-
-
-
+import { useState } from "react"
 
 export default function Forms() {
 
+    const [data, setData] = useState({
+        firstname: 'Daniel',
+        lastname: 'Schmitz',
+        email: 'danieljfa@gmail.com'
+    })
+
+    const handleChange = (e) => {
+        setData({ ...data, [e.target.name]: e.target.value })
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(data)
+    }
+
     return (<form>
         <div className="grid">
-            <label for="firstname">
+            <label htmlFor="firstname">
                 First name
-                <input type="text" id="firstname" name="firstname" placeholder="First name" aria-invalid="false" required/>
+                <input type="text" value={data.firstname} onChange={handleChange} id="firstname" name="firstname" placeholder="First name" required />
             </label>
-            <label for="lastname">
+            <label htmlFor="lastname">
                 Last name
-                <input type="text" id="lastname" name="lastname" placeholder="Last name" required/>
+                <input type="text" value={data.lastname} onChange={handleChange} id="lastname" name="lastname" placeholder="Last name" required />
             </label>
-
         </div>
-        <label for="email">Email address</label>
-        <input type="email" id="email" name="email" placeholder="Email address" required/>
+
+        <label htmlFor="email">Email address
+            <input type="email" value={data.email} onChange={handleChange} id="email" name="email" placeholder="Email address" required />
             <small>We'll never share your email with anyone else.</small>
-            <button type="submit">Submit</button>
+        </label>
+               
+        <button type="button" onClick={handleSubmit}>Submit</button>
     </form>)
 }
